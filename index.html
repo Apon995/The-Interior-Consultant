@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Interior Consultant</title>
+    <link rel="icon" type="icon/image" href="./assets/devchallenges.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mideaquerry.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ---header-section--- -->
+    <header>
+      <nav class="d-flex">
+        <h1>This Interior</h1>
+        <div>
+          <ion-icon
+            name="menu"
+            class="menu-bar"
+            onclick="showMenubar()"
+          ></ion-icon>
+          <ul class="ul-d-flex">
+            <ion-icon
+              name="close"
+              class="close-bar"
+              onclick="closeMenubar()"
+            ></ion-icon>
+            <li><a href="#Home" class="active-link">Home</a></li>
+            <li><a href="#Collection" class="">Collection</a></li>
+            <li><a href="#About" class="">About</a></li>
+            <li><a href="#Contact" class="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- -----main--section---- -->
+    <main>
+      <section class="d-flex">
+        <div class="left-section">
+          <h1>Modern interior</h1>
+          <p>
+            A full-Service residential & <br />
+            commercial interior design <br />
+            and staging company offering <br />
+            professional organizing & <br />
+            eco-services.
+          </p>
+          <a href="#"
+            >Read more
+            <ion-icon
+              name="arrow-forward-outline"
+              class="arrow-right"
+            ></ion-icon
+          ></a>
+        </div>
+
+        <div class="right-section">
+          <img src="./assets/photo1.png" alt="" />
+          <div class="right-section-card">
+            <div>
+              <img
+                src="./assets/photo2.png"
+                alt=""
+                style="width: 80px; border-radius: 80%"
+              />
+
+              <div>
+                <p>Aliza Webber</p>
+                <span>Interior designer</span>
+              </div>
+            </div>
+            <h3>
+              Designed in 2020 by <br />
+              Aliza Webber
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------footer----    -->
+    <footer>
+      <p>created by <span>Apon995</span> - devChallenges.io</p>
+    </footer>
+    <script>
+      function showMenubar() {
+        document.querySelector(".ul-d-flex").style.left = "-2px";
+      }
+      function closeMenubar() {
+        document.querySelector(".ul-d-flex").style.left = "-500px";
+      }
+    </script>
+  </body>
+</html>

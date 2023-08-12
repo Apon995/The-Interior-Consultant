@@ -1,0 +1,51 @@
+@media screen and (max-width: 640px) {
+    header > .d-flex > div >.ul-d-flex > .close-bar{
+      display: block;;
+  
+    }
+    header > .d-flex > div > .menu-bar {
+      display: block;
+    }
+    header > .d-flex {
+      position: relative;
+      
+    }
+    header > .d-flex > div > .ul-d-flex{
+      text-align: center;
+      justify-content: center;
+      position: absolute;
+      width:104%;
+      height:100vh;
+      background-color: #181719;
+      flex-direction: column;
+      left:-500px;
+      top:-9px;
+      z-index: 999;
+      transition: 0.8s left ease-out;
+    }
+  
+   
+    main > .d-flex {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    main > .d-flex > .right-section > img {
+      width:100%;
+      border-radius: 10px;
+    }
+    main > .d-flex > .left-section {
+      margin: 0;
+    }
+    main > .d-flex > .right-section > .right-section-card {
+      width:85%;
+      left: 0px; 
+      top: -65px;
+    }
+    main > .d-flex > .right-section > .right-section-card > h3 {
+      font-size: 20px;
+    }
+  }
+  
